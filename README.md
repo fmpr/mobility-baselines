@@ -6,7 +6,7 @@ This repository contains source code for reproducing the results in:
 
 * [Rodrigues, F. On the importance of stationarity, strong baselines and benchmarks in transport prediction problems. In ArXiv, 2022](https://arxiv.org/abs/)
 
-It consists of code for computing the "HA" and "HA+LR" baselines described in the paper, as well as code for preparing the experimental setups (i.e., train/val/test splits, forecasting horizons, evaluation metrics, etc.) for the follwing 9 publicly-available datasets:
+It consists of code for computing the "HA" and "HA+LR" baselines described in the paper, as well as code for preparing the experimental setups (i.e., train/val/test splits, forecasting horizons, evaluation metrics, etc.) for the following 9 publicly-available datasets:
 
 | Name                        | Type                 | Timespan                | Time granularity | Train/val/test split | Source                                 |
 |-----------------------------|----------------------|-------------------------|------------------|----------------------|----------------------------------------|
@@ -20,7 +20,7 @@ It consists of code for computing the "HA" and "HA+LR" baselines described in th
 | NYC Citi Bike - New York    | in- and out-flows    | 01/07/2017 - 30/09/2017 | 1 hour           | 80/10/10 \%          | Xia et al., 2021    |
 | Seattle loop data - Seattle | traffic speeds       | 01/11/2015 - 31/12/2015 | 5 minutes        | 56/-/5 days          | Yang et al., 2021   |
 
-The goal is to facilitate the comparison between different spatio-temporal forecasting approaches. 
+The goal is to facilitate the comparison between different spatio-temporal forecasting approaches by providing multiple well-defined reference benchmarks. 
 
 The repo does not include the actual data, but the table below provides links to where the data can be downloaded: 
 
