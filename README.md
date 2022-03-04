@@ -39,11 +39,11 @@ The repo does not include the actual data, but the table below provides links to
 The file [mobility_detrender.py](https://github.com/fmpr/mobility-baselines/blob/main/mobility_detrender.py) contains the code for computing the historical averages (HA).
 
 References:
-[1] B. Yu, H. Yin, and Z. Zhu, “Spatio-temporal graph convolutional networks: A deep learning framework for traffic forecasting,” in 27th International Joint Conference on Artificial Intelligence (IJCAI-18), 2018.
-[2] K. Lee and W. Rhee, “Ddp-gcn: Multi-graph convolutional network for spatiotemporal traffic forecasting,” Transportation Research Part C: Emerging Technologies, vol. 134, p. 103466, 2022.
-[3] J. Ye, L. Sun, B. Du, Y. Fu, and H. Xiong, “Coupled layer-wise graph convolution for transportation demand prediction,” in Thirty-Fifth AAAI Conference on Artificial Intelligence (AAAI-21), 2021.
-[4] J.Choi,H.Choi,J.Hwang,andN.Park,“Graphneuralcontrolleddiffer- ential equations for traffic forecasting,” in Thirty-Sixth AAAI Conference on Artificial Intelligence (AAAI-22), 2022.
-[5] L.Zhao,Y.Song,C.Zhang,Y.Liu,P.Wang,T.Lin,M.Deng,andH.Li, “T-gcn: A temporal graph convolutional network for traffic prediction,” IEEE Transactions on Intelligent Transportation Systems, vol. 21, no. 9, pp. 3848–3858, 2019.
-[6] Y. Li, R. Yu, C. Shahabi, and Y. Liu, “Diffusion convolutional recurrent neural network: Data-driven traffic forecasting,” in International Con- ference on Learning Representations (ICLR-18), 2018.
-[7] T.Xia,J.Lin,Y.Li,J.Feng,P.Hui,F.Sun,D.Guo,andD.Jin,“3dgcn: 3-dimensional dynamic graph convolutional network for citywide crowd flow prediction,” ACM Transactions on Knowledge Discovery from Data (TKDD), vol. 15, no. 6, pp. 1–21, 2021.
-[8] J.-M. Yang, Z.-R. Peng, and L. Lin, “Real-time spatiotemporal prediction and imputation of traffic status based on lstm and graph laplacian regu- larized matrix factorization,” Transportation Research Part C: Emerging Technologies, vol. 129, p. 103228, 2021.
+* [1] B. Yu, H. Yin, and Z. Zhu, “Spatio-temporal graph convolutional networks: A deep learning framework for traffic forecasting,” in 27th International Joint Conference on Artificial Intelligence (IJCAI-18), 2018.
+* [2] K. Lee and W. Rhee, “Ddp-gcn: Multi-graph convolutional network for spatiotemporal traffic forecasting,” Transportation Research Part C: Emerging Technologies, vol. 134, p. 103466, 2022.
+* [3] J. Ye, L. Sun, B. Du, Y. Fu, and H. Xiong, “Coupled layer-wise graph convolution for transportation demand prediction,” in Thirty-Fifth AAAI Conference on Artificial Intelligence (AAAI-21), 2021.
+* [4] J.Choi,H.Choi,J.Hwang,andN.Park,“Graphneuralcontrolleddiffer- ential equations for traffic forecasting,” in Thirty-Sixth AAAI Conference on Artificial Intelligence (AAAI-22), 2022.
+* [5] L.Zhao,Y.Song,C.Zhang,Y.Liu,P.Wang,T.Lin,M.Deng,andH.Li, “T-gcn: A temporal graph convolutional network for traffic prediction,” IEEE Transactions on Intelligent Transportation Systems, vol. 21, no. 9, pp. 3848–3858, 2019.
+* [6] Y. Li, R. Yu, C. Shahabi, and Y. Liu, “Diffusion convolutional recurrent neural network: Data-driven traffic forecasting,” in International Con- ference on Learning Representations (ICLR-18), 2018.
+* [7] T.Xia,J.Lin,Y.Li,J.Feng,P.Hui,F.Sun,D.Guo,andD.Jin,“3dgcn: 3-dimensional dynamic graph convolutional network for citywide crowd flow prediction,” ACM Transactions on Knowledge Discovery from Data (TKDD), vol. 15, no. 6, pp. 1–21, 2021.
+* [8] J.-M. Yang, Z.-R. Peng, and L. Lin, “Real-time spatiotemporal prediction and imputation of traffic status based on lstm and graph laplacian regu- larized matrix factorization,” Transportation Research Part C: Emerging Technologies, vol. 129, p. 103228, 2021.
