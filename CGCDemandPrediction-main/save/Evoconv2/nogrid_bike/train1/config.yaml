@@ -1,0 +1,87 @@
+data:
+  Normal_Method: Standard
+  X_list:
+  - 12
+  - 11
+  - 10
+  - 9
+  - 8
+  - 7
+  - 6
+  - 5
+  - 4
+  - 3
+  - 2
+  - 1
+  Y_list:
+  - 0
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
+  - 11
+  _len:
+  - 672
+  - 672
+  batch_size: 32
+  dataset: nogrid
+device: 0
+loss:
+  name: rmse
+model:
+  Evonet2:
+    cl_decay_steps: 300
+    hidden_size: 25
+    input_dim: 2
+    k_hop: 3
+    n_dim: 50
+    n_gconv_layers: 3
+    n_pred: 12
+    n_rnn_layers: 1
+    n_supports: 1
+    num_nodes: 250
+    output_dim: 2
+  name: Evonet2
+name: Evoconv2
+optimizer:
+  Adam:
+    amsgrad: true
+    eps: 0.001
+    lr: 0.0005
+    weight_decay: 0.0005
+  RMSprop:
+    lr: 0.01
+    weight_decay: 0.001
+  name: Adam
+preprocess:
+  hidden_size: 20
+  normalized_category: randomwalk
+scheduler:
+  MultiStepLR:
+    gamma: 0.1
+    milestones:
+    - 1
+    - 5
+    - 10
+    - 15
+    - 20
+  ReduceLROnPlateau:
+    factor: 0.2
+    min_lr: 1.0e-06
+    patience: 5
+    threshold: 0.001
+  StepLR:
+    gamma: 0.1
+    step_size: 10
+  name: ReduceLROnPlateau
+tag: train1
+train:
+  early_stop_steps: 10
+  epochs: 200
+  max_grad_norm: 5
