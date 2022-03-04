@@ -26,14 +26,14 @@ The repo does not include the actual data, but the table below provides links to
 
 | Name                        | Download link                 |
 |-----------------------------|----------------------|
-| PeMSD7(M) - California      | Link       |
-| Urban1 - South Korea        | Link       |
-| NYC Citi Bike - New York    | Link |
-| PeMSD4 - California         | Link      |
-| SZ-taxi - Shenzhen          | Link       |
-| METR-LA - Los Angeles       | Link       |
-| PEMS-BAY - California       | Link       |
-| NYC Citi Bike - New York    | Link    |
-| Seattle loop data - Seattle | Link       |
+| PeMSD7(M) - California      | [Link](https://github.com/VeritasYin/STGCN_IJCAI-18/tree/master/data_loader) ([Mirror](https://mega.nz/file/IR4SCaAY#L22swMzsea5O-EuD_KQf6kuAu5pNkit_9p07qFXQ80U))      |
+| Urban1 - South Korea        | [Link](https://github.com/snu-adsl/DDP-GCN/tree/main/dataset) ([Mirror](https://mega.nz/file/gVAlxCTb#wI_29erVJlstayKcLKdAj9p0gdYTxhcbrCc509w-Qbs))       |
+| NYC Citi Bike - New York    | [Link](https://github.com/Essaim/CGCDemandPrediction/tree/main/data) ([Mirror](https://mega.nz/file/ZcZVHAKa#YxfaSlsIKsxjLWtTmbUOEaonCK7HmqKmuiCpnP06D1E)) |
+| PeMSD4 - California         | [Link](https://github.com/jeongwhanchoi/STG-NCDE/tree/main/data) ([Mirror](https://mega.nz/file/oExDgC6Z#2NdQ28ogIYXc5wAeVTclG2DQmW91FrgOGhNQ39kmlPE))      |
+| SZ-taxi - Shenzhen          | [Link](https://github.com/lehaifeng/T-GCN/tree/master/data) ([Mirror](https://mega.nz/file/RF43ka4R#u2DgbzTQUTj1Ya_ON95vQn6QA9dmpNLrsDwkKLyV8RQ))       |
+| METR-LA - Los Angeles       | [Link](https://github.com/liyaguang/DCRNN) ([Mirror](https://mega.nz/file/lUgFmKIL#YnrZoY7xy2XoYZ_cpfe-F-1WMXUIOS0d8-nCq4KuBfY))      |
+| PEMS-BAY - California       | [Link](https://github.com/liyaguang/DCRNN) ([Mirror](https://mega.nz/file/dN5VQaob#m9E9WQbgtwYFIWveEmFQPI8I9Z_spBJkZW7LT2GGuGE))      |
+| NYC Citi Bike - New York    | [Link](https://github.com/FIBLAB/3D-DGCN/tree/master/flow) ([Mirror](https://mega.nz/file/dMo1mSQA#op2C4Rjp7x5UifsEEj8_1LmlSV-6iSK8Qhv7SpLPqm0))    |
+| Seattle loop data - Seattle | [Link](https://github.com/Vadermit/TransPAI/tree/master/datasets/Seattle_loop-data-set) ([Mirror](https://mega.nz/file/0NZHgILC#Y5f7XBrQkAgTguZaLNWNGjBN5Z_uMSZjPfz8TFapObw))       |
 
 
