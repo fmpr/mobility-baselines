@@ -6,7 +6,7 @@ This repository contains source code for reproducing the results in:
 
 * [Rodrigues, F. On the importance of stationarity, strong baselines and benchmarks in transport prediction problems. In ArXiv, 2022](https://arxiv.org/abs/)
 
-It consists of code for computing the "HA" and "HA+LR" baselines described in the paper, as well as code for preparing the experimental setups (i.e., train/val/test splits, forecasting horizons, evaluation metrics, etc.) for the following 9 publicly-available datasets:
+It contains code for computing the "HA" and "HA+LR" baselines described in the paper, as well as code for preparing the experimental setups (i.e., train/val/test splits, forecasting horizons, evaluation metrics, etc.) for the following 9 publicly-available datasets:
 
 | Name                        | Type                 | Timespan                | Time granularity | Train/val/test split | Source                                 |
 |-----------------------------|----------------------|-------------------------|------------------|----------------------|----------------------------------------|
