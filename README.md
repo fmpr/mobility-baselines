@@ -36,4 +36,4 @@ The repo does not include the actual data, but the table below provides links to
 | NYC Citi Bike - New York    | [Link](https://github.com/FIBLAB/3D-DGCN/tree/master/flow) ([Mirror](https://mega.nz/file/dMo1mSQA#op2C4Rjp7x5UifsEEj8_1LmlSV-6iSK8Qhv7SpLPqm0))    | [3D-DGCN - Mobility baselines-FINAL.ipynb](https://github.com/fmpr/mobility-baselines/blob/main/3D-DGCN-master/3D-DGCN%20-%20Mobility%20baselines-FINAL.ipynb) |
 | Seattle loop data - Seattle |  [Link](https://github.com/Vadermit/TransPAI/tree/master/datasets/Seattle_loop-data-set) ([Mirror](https://mega.nz/file/0NZHgILC#Y5f7XBrQkAgTguZaLNWNGjBN5Z_uMSZjPfz8TFapObw))       | [TransPAI - Mobility baselines.ipynb](https://github.com/fmpr/mobility-baselines/blob/main/TransPAI-master/Experiments/TransPAI%20-%20Mobility%20baselines.ipynb) |
 
-The file [mobility_detrender.py](https://github.com/fmpr/mobility-baselines/blob/main/mobility_detrender.py) contains code for computing the historical averages (HA). 
+The file [mobility_detrender.py](https://github.com/fmpr/mobility-baselines/blob/main/mobility_detrender.py) contains the code for computing the historical averages (HA). 
