@@ -1,0 +1,19 @@
+dataset: "SZ-taxi"
+start_date: "2015-01-01"
+start_test_day: null
+n_test_days: null
+proportion_test: 0.2
+freq: 15
+target: "target"
+future_covariates: null
+past_covariates: null
+prediction_length: 4
+id_column: "item_id"
+timestamp_column: "timestamp"
+horizons: [15, 30, 45, 60]
+decimal_precision: 3
+metrics_to_show:
+  - MAE
+  - RMSE
+  - COVERAGE
+  - IQR_MEAN

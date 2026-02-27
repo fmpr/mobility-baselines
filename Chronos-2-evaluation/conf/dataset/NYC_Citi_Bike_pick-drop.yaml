@@ -1,0 +1,19 @@
+dataset: "NYC Citi Bike (pick-drop)"
+start_date: "2016-04-01"
+start_test_day: 77
+n_test_days: 14
+proportion_test: null
+freq: 30
+target: "bike_pick"
+future_covariates: null
+past_covariates: ["bike_drop"]
+prediction_length: 12
+id_column: "item_id"
+timestamp_column: "timestamp"
+horizons: [30, 60, 90, 120, 150, 180, 210, 240, 270, 300, 330, 360]
+decimal_precision: 3
+metrics_to_show:
+  - MAE
+  - RMSE
+  - COVERAGE
+  - IQR_MEAN

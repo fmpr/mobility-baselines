@@ -1,0 +1,19 @@
+dataset: "NYC Citi Bike (in-out)"
+start_date: "2017-07-01"
+start_test_day: null
+n_test_days: null
+proportion_test: 0.1
+freq: 60
+target: "bike_in"
+future_covariates: null
+past_covariates: ["bike_out"]
+prediction_length: 3
+id_column: "item_id"
+timestamp_column: "timestamp"
+horizons: [60, 120, 180]
+decimal_precision: 2
+metrics_to_show:
+  - MAE
+  - RMSE
+  - COVERAGE
+  - IQR_MEAN
