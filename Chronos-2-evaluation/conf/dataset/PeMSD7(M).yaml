@@ -1,0 +1,20 @@
+dataset: PeMSD7(M)
+start_date: "2016-04-01"
+start_test_day: 39
+n_test_days: 5
+proportion_test: null
+freq: 5
+target: "target"
+future_covariates: null
+past_covariates: null
+prediction_length: 9
+id_column: "item_id"
+timestamp_column: "timestamp"
+horizons: [15, 30, 45]
+decimal_precision: 2
+metrics_to_show:
+  - MAE
+  - MAPE
+  - RMSE
+  - COVERAGE
+  - IQR_MEAN

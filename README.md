@@ -2,11 +2,7 @@
 
 **Baselines and benchmarks for spatio-temporal forecasting problems in transportation**
 
-This repository contains source code for reproducing the results in:
-
-* [Rodrigues, F. On the importance of stationarity, strong baselines and benchmarks in transport prediction problems. In ArXiv, 2022](https://arxiv.org/abs/)
-
-It consists of code for computing the "HA" and "HA+LR" baselines described in the paper, as well as code for preparing the experimental setups (i.e., train/val/test splits, forecasting horizons, evaluation metrics, etc.) for the following 9 publicly-available datasets:
+This repository contains source code for reproducing the experimental results for the following 10 publicly-available datasets:
 
 | Name                        | Type                 | Timespan                | Time granularity | Train/val/test split | Source                                 |
 |-----------------------------|----------------------|-------------------------|------------------|----------------------|----------------------------------------|
@@ -19,12 +15,13 @@ It consists of code for computing the "HA" and "HA+LR" baselines described in th
 | PEMS-BAY - California       | traffic speeds       | 01/01/2017 - 31/05/2017 | 5 minutes        | 70/10/20 \%          | Li et al., 2018 [6] |
 | NYC Citi Bike - New York    | in- and out-flows    | 01/07/2017 - 30/09/2017 | 1 hour           | 80/10/10 \%          | Xia et al., 2021 [7]   |
 | Seattle loop data - Seattle | traffic speeds       | 01/11/2015 - 31/12/2015 | 5 minutes        | 56/-/5 days          | Yang et al., 2021 [8]  |
+| UrbanEV - Shenzhen          | EV occupancy, duration, volume | 01/09/2022 - 28/02/2023 | 1 hour           | 80/10/10 \%          | Li et al., 2025 [9]    |
 
 The goal is to facilitate the comparison between different spatio-temporal forecasting approaches by providing multiple well-defined reference benchmarks. 
 
 The repo does not include the actual data, but the table below provides links to where the data can be downloaded: 
 
-| Name                        | Download link                 | Jupyter notebook with baseline                 | 
+| Name                        | Download link                 | Evaluation notebook / Scripts                 | 
 |-----------------------------|----------------------|----------------------|
 | PeMSD7(M) - California      | [Link](https://github.com/VeritasYin/STGCN_IJCAI-18/tree/master/data_loader) ([Mirror](https://mega.nz/file/IR4SCaAY#L22swMzsea5O-EuD_KQf6kuAu5pNkit_9p07qFXQ80U))      | [STGCN - Historical average baselines-FINAL.ipynb](https://github.com/fmpr/mobility-baselines/blob/main/STGCN_IJCAI-18-master/STGCN%20-%20Historical%20average%20baselines-FINAL.ipynb) |
 | Urban1 - South Korea        | [Link](https://github.com/snu-adsl/DDP-GCN/tree/main/dataset) ([Mirror](https://mega.nz/file/gVAlxCTb#wI_29erVJlstayKcLKdAj9p0gdYTxhcbrCc509w-Qbs))       | [DDP-GCN - Historical average baselines-FINAL.ipynb](https://github.com/fmpr/mobility-baselines/blob/main/DDP-GCN-main/DDP-GCN%20-%20Historical%20average%20baselines-FINAL.ipynb) |
@@ -35,8 +32,9 @@ The repo does not include the actual data, but the table below provides links to
 | PEMS-BAY - California       | [Link](https://github.com/liyaguang/DCRNN) ([Mirror](https://mega.nz/file/dN5VQaob#m9E9WQbgtwYFIWveEmFQPI8I9Z_spBJkZW7LT2GGuGE))      | [DCRNN - Mobility baselines - PEMS-BAY.ipynb](https://github.com/fmpr/mobility-baselines/blob/main/DCRNN-master/DCRNN%20-%20Mobility%20baselines%20-%20PEMS-BAY.ipynb) | 
 | NYC Citi Bike - New York    | [Link](https://github.com/FIBLAB/3D-DGCN/tree/master/flow) ([Mirror](https://mega.nz/file/dMo1mSQA#op2C4Rjp7x5UifsEEj8_1LmlSV-6iSK8Qhv7SpLPqm0))    | [3D-DGCN - Mobility baselines-FINAL.ipynb](https://github.com/fmpr/mobility-baselines/blob/main/3D-DGCN-master/3D-DGCN%20-%20Mobility%20baselines-FINAL.ipynb) |
 | Seattle loop data - Seattle |  [Link](https://github.com/Vadermit/TransPAI/tree/master/datasets/Seattle_loop-data-set) ([Mirror](https://mega.nz/file/0NZHgILC#Y5f7XBrQkAgTguZaLNWNGjBN5Z_uMSZjPfz8TFapObw))       | [TransPAI - Mobility baselines.ipynb](https://github.com/fmpr/mobility-baselines/blob/main/TransPAI-master/Experiments/TransPAI%20-%20Mobility%20baselines.ipynb) |
+| UrbanEV - Shenzhen          | [Link](https://github.com/IntelligentSystemsLab/UrbanEV/tree/main/data) | [code/exp.sh](https://github.com/fmpr/mobility-baselines/blob/main/UrbanEV-main/code/exp.sh), [code-transformers/exp.sh](https://github.com/fmpr/mobility-baselines/blob/main/UrbanEV-main/code-transformer/exp.sh) |
 
-The file [mobility_detrender.py](https://github.com/fmpr/mobility-baselines/blob/main/mobility_detrender.py) contains the code for computing the historical averages (HA).
+The file [mobility_detrender.py](https://github.com/fmpr/mobility-baselines/blob/main/mobility_detrender.py) contains the code for computing the historical averages (HA). For Chronos-2, execute the [exp.sh](https://github.com/fmpr/mobility-baselines/blob/main/Chronos-2-evaluation/exp.sh) reproduction script.
 
 References:
 * [1] B. Yu, H. Yin, and Z. Zhu, “Spatio-temporal graph convolutional networks: A deep learning framework for traffic forecasting,” in 27th International Joint Conference on Artificial Intelligence (IJCAI-18), 2018.
@@ -47,3 +45,4 @@ References:
 * [6] Y. Li, R. Yu, C. Shahabi, and Y. Liu, “Diffusion convolutional recurrent neural network: Data-driven traffic forecasting,” in International Conference on Learning Representations (ICLR-18), 2018.
 * [7] T. Xia, J. Lin, Y. Li, J. Feng, P. Hui, F. Sun, D. Guo, and D. Jin, “3DGCN: 3-dimensional dynamic graph convolutional network for citywide crowd flow prediction,” ACM Transactions on Knowledge Discovery from Data (TKDD), vol. 15, no. 6, pp. 1–21, 2021.
 * [8] J.-M. Yang, Z.-R. Peng, and L. Lin, “Real-time spatiotemporal prediction and imputation of traffic status based on lstm and graph laplacian regularized matrix factorization,” Transportation Research Part C: Emerging Technologies, vol. 129, p. 103228, 2021.
+* [9] H. Li, H. Qu, X. Tan, L. You, R. Zhu, and W. Fan, “UrbanEV: An open benchmark dataset for urban electric vehicle charging demand prediction,” Scientific Data, vol. 12, no. 1, p. 523, 2025.

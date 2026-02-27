@@ -1,0 +1,19 @@
+dataset: "Seattle loop data"
+start_date: "2015-11-01"
+start_test_day: 56
+n_test_days: 5
+proportion_test: null
+freq: 5
+target: "target"
+future_covariates: null
+past_covariates: null
+prediction_length: 1
+id_column: "item_id"
+timestamp_column: "timestamp"
+horizons: [5]
+decimal_precision: 2
+metrics_to_show:
+  - MAPE
+  - RMSE
+  - COVERAGE
+  - IQR_MEAN

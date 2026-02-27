@@ -1,0 +1,6 @@
+dataset_cfg: dataset/PeMSD7(M) # Override from CLI the dataset to run the experiment on
+cross_learning: True
+batch_size: null
+stride_steps: 1
+seed: 42
+quantile_levels: [0.1, 0.5, 0.9]
